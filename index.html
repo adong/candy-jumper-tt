@@ -151,6 +151,10 @@
   body:not(.p2) .p2only, body.p2 .p1only { display: none; }
   @media (max-height: 460px) {
     .tgrp { transform: scale(0.8); }
+    /* phones sideways: ▼ above ◀ ▶, and the brother above JUMP, so the screen gets more width */
+    #tL { display: grid; grid-template-columns: auto auto; gap: 8px; }
+    #tL [data-k="down"] { grid-row: 1; grid-column: 1 / span 2; justify-self: center; }
+    #tR { flex-direction: column; align-items: center; }
     #tL { transform-origin: left bottom; }
     #tR { transform-origin: right bottom; }
     .box { padding: 3px 8px; min-width: 76px; }
@@ -175,6 +179,7 @@
     .tk.jump { width: 86px; height: 86px; }
     .tk.call { width: 62px; height: 62px; }
     .tk.call img { width: 48px; height: 48px; }
+    #tR { flex-direction: column; align-items: center; } /* a phone held upright: the brother above the big JUMP */
   }
 
   /* ---------- screens ---------- */
@@ -275,6 +280,7 @@
     .opt .e { font-size: 20px; }
     .btn { padding: 7px 18px; box-shadow: 0 5px 0 var(--ink); }
     .touch-hint { font-size: 12px; max-width: 600px; }
+    .keys { grid-template-columns: auto auto auto auto; gap: 2px 12px; padding: 5px 12px; font-size: 12px; }
     .big { font-size: 28px; }
     .stats { font-size: 12px; }
     .stats td { padding: 1px 7px; }
