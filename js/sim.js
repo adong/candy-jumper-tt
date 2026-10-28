@@ -22,7 +22,7 @@
     easy: { lives: 5, bird: 1.5, robot: 1.15, start: 1, max: 3, every: 11, power: 8, floatFall: 1.8, ballSpeed: 1.8 },
     normal: { lives: 3, bird: 2.5, robot: 2, start: 2, max: 5, every: 7, power: 5.5, floatFall: 2.2, ballSpeed: 2.4 },
   };
-  const PTS = { candy: 100, glow: 300, glowBonus: 500, perfect: 10000, coin: 200, ball: 1000, treat: 100, hi5: 50, life: 30000 };
+  const PTS = { candy: 100, glow: 300, glowBonus: 500, perfect: 10000, coin: 200, ball: 1000, treat: 100, hi5: 50, life: 50000 };
   const TREATS = ['🍦', '💧', '🧃', '🍪', '🍉', '🍌'];
   const BALL_AT = [8, 17]; // the power ball comes out after this many candies
   const FR = { bird: [0.42, 0.32], robot: [0.42, 0.42] }; // a flyer's half size
